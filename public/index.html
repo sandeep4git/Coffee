@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="CoffeeApp">
+<head>
+    <meta charset="UTF-8">
+    <title>StarBuzz Coffee Works</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body >
+<div >
+<div class="">
+    <ul class="nav nav-pills nav_top">
+        <ul class="nav navbar-nav ">
+            <li class="pull-left"><a href="#/about/">ABOUT</a></li>
+            <li class="pull-left"><a href="#/contact">CONTACT</a></li>
+            <li class="pull-right"ng-hide="authenticated"><a href="#/login">LOGIN</a></li>
+            <li class="pull-right" ng-hide="authenticated"><a href="#/signup_form">SIGNUP</a></li>
+            <li class="pull-right" ng-show="authenticated"><a href="#" ng-click="logout()">LOGOUT</a></li>
+        </ul>
+        <li class="pull-right" ng-show="authenticated"><h3 style="color:whitesmoke">{{current_user}}</h3></li>
+    </ul>
+</div>
+<div class="">
+    <ul class="nav nav-pills ">
+        <ul class="nav navbar-nav  ">
+            <li class="pull-left"><a href="index.html"><img src="Images/starbucks.png" height="100"></a></li>
+            <li class="nav_middle"><h2>Welcome to StarBuzz</h2></li>
+        </ul>
+
+    </ul>
+</div>
+
+<div class="nav_bottom">
+    <ul class="nav nav-pills">
+        <ul class="nav navbar-nav">
+            <li class="pull-left">
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button  type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                </form>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-center">
+            <li ><a href="#">COFFEE</a> </li>
+            <li ><a href="Pages/Signup.html">MENU</a> </li>
+            <li ><a href="Pages/Login.html">GIFTS</a> </li>
+            <li ng-show="authenticated"><a href="Profile.html#/Details">PROFILE</a> </li>
+        </ul>
+
+        <li class="pull-right"><a href="https://www.facebook.com/lymMissouriUniversityofScienceandTechnology" target="_blank"><img src="Images/facebook.png" height="20"></a></li>
+        <li class="pull-right"><a href="https://twitter.com/SandTLYMCrew" target="_blank"><img src="Images/twitter_alt.png" height="20"></a></li>
+
+    </ul>
+</div>
+
+    <ng-view></ng-view>
+
+<footer>
+    <div class="footer" align="center">
+        Copyright &copy StarBuzz.com
+    </div>
+</footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="controllers/controller.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,88 @@
+body{
+  font-family: Montserrat;
+}
+.nav_top{
+  background-color: #006341;
+}
+.nav_middle{
+  margin-left: 340px;
+  margin-top:25px;
+  text-align:center;
+}
+.search{
+  margin-top:-7px;
+  margin-bottom:-3px;
+}
+
+.nav_bottom{
+  background-color:#006341;
+}
+
+a:link {
+  text-decoration: none;
+}
+.navbar-center{
+  margin-left:200px;
+}
+.footer{
+  background-color: #006341;
+  color:whitesmoke;
+}
+.centered
+{
+  margin-left:480px;
+  float: none;
+}
+.form_text{
+  text-align: center;
+}
+#form_button {
+  background-color: red;
+  width: 300px;
+  height: 40px;
+}
+a{
+  color:whitesmoke;
+}
+#card_option{
+  width: 300px;
+  height: 50px;
+}
+
+.section{
+  padding:30px;
+  float:left;
+  background-color:#006341;
+  float:left;
+  border-radius:10px ;
+}
+#pic_border{
+  margin-left:45px;
+  width:140px;
+  height:120px;
+  position:relative;
+  border:1px solid #006341;
+  background-color: #f1f1f1;
+  border-radius:10px ;
+
+}
+#pic_inside{
+  padding: 10px;
+}
+#left_panel{
+  margin-left: 75px;
+  margin-top: 50px;
+}
+.profile_header{
+  height: 100px;
+  width: 845px;
+  margin-left:-25px;
+  padding:15px 15px 15px 25px;
+  font-size: 10px;
+
+}
+#jumbo{
+  padding:5px 15px 15px 25px;
+  font-size: 10px;
+
+}

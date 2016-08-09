@@ -1,0 +1,21 @@
+<div class="Container" >
+    <h2  align="center" id="form_heading">LOGIN</h2>
+    <form role="form" ng-submit="login()">
+        <div class="form-group row">
+            <div class="col-sm-3 centered" >
+                <input type="text" class="form-control form_text" id="email_login" ng-model="user.username"  placeholder="USERNAME" >
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-3 centered" >
+                <input type="password" class="form-control form_text" id="password_login" ng-model="user.password" placeholder="PASSWORD" >
+            </div>
+        </div>
+        <div class="form-group row" >
+            <div class="col-sm-3 centered">
+                <button type="submit" class="btn btn-primary" id="form_button">LOGIN</button>
+            </div>
+        </div>
+    </form>
+</div>
